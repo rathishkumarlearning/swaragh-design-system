@@ -1,0 +1,149 @@
+/* Flower Shop Specific Styles */
+:root {
+  /* Floral Color Palette */
+  --floral-pink: #FF69B4;
+  --floral-rose: #FF007F;
+  --floral-green: #98FB98;
+  --floral-sage: #4A5D4C;
+  --floral-cream: #FFFDD0;
+  --floral-white: #FFFFF0;
+  --floral-brown: #8B4513;
+}
+
+/* Hero Section Override */
+.flower-hero {
+  background: linear-gradient(135deg, var(--floral-pink), var(--floral-rose));
+  min-height: 80vh;
+}
+
+.flower-hero::before {
+  background-image: url('assets/floral-pattern.svg');
+  opacity: 0.15;
+}
+
+/* Product Card */
+.flower-card {
+  background: var(--floral-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.flower-card:hover {
+  transform: translateY(-5px);
+}
+
+.flower-card__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.flower-card__price {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: var(--floral-pink);
+  color: var(--floral-white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+.flower-card__title {
+  color: var(--floral-brown);
+  font-size: var(--text-xl);
+  margin-bottom: var(--spacing-xs);
+}
+
+.flower-card__description {
+  color: var(--text-dark);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Category Pills */
+.flower-categories {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin: var(--spacing-xl) 0;
+}
+
+.flower-category {
+  background: var(--floral-cream);
+  color: var(--floral-brown);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 20px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flower-category:hover,
+.flower-category.active {
+  background: var(--floral-pink);
+  color: var(--floral-white);
+}
+
+/* Features Section */
+.flower-features {
+  background: var(--floral-cream);
+  padding: var(--spacing-2xl) 0;
+}
+
+.feature-card {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.feature-card__icon {
+  font-size: var(--text-4xl);
+  color: var(--floral-rose);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Newsletter Section */
+.flower-newsletter {
+  background: linear-gradient(135deg, var(--floral-sage), var(--floral-green));
+  padding: var(--spacing-2xl) 0;
+  color: var(--floral-white);
+}
+
+.flower-newsletter__form {
+  display: flex;
+  gap: var(--spacing-md);
+  max-width: 500px;
+  margin: var(--spacing-xl) auto 0;
+}
+
+.flower-newsletter__input {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+}
+
+/* Responsive Grid */
+.flower-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
+}
+
+@media (max-width: 768px) {
+  .flower-newsletter__form {
+    flex-direction: column;
+  }
+  
+  .flower-categories {
+    justify-content: center;
+  }
+}
