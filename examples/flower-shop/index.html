@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Delights | Fresh Flowers & Arrangements</title>
+    <link rel="stylesheet" href="../../src/styles/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sw-header">
+        <nav class="sw-container sw-nav">
+            <div class="sw-logo">
+                <img src="assets/logo.svg" alt="Blooming Delights Logo" width="180">
+            </div>
+            <ul class="sw-nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#occasions">Occasions</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="sw-button sw-button--primary">
+                        <i class="fas fa-shopping-cart"></i> Cart (0)
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flower-hero sw-hero sw-fade-in">
+        <div class="sw-container sw-hero__content">
+            <h1 class="sw-hero__title">
+                Beautiful Flowers for
+                <span class="sw-hero__highlight">Every Occasion</span>
+            </h1>
+            <p>Fresh, hand-picked flowers delivered to your doorstep. Make every moment special with our stunning arrangements.</p>
+            <div class="sw-hero__cta-group">
+                <button class="sw-button sw-button--primary">Shop Now</button>
+                <button class="sw-button sw-button--secondary">View Collections</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="sw-container">
+        <div class="flower-categories">
+            <button class="flower-category active">All Flowers</button>
+            <button class="flower-category">Roses</button>
+            <button class="flower-category">Lilies</button>
+            <button class="flower-category">Tulips</button>
+            <button class="flower-category">Bouquets</button>
+            <button class="flower-category">Special Occasions</button>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="sw-container">
+        <h2 style="font-size: var(--text-3xl); margin-bottom: var(--spacing-xl); text-align: center;">Featured Flowers</h2>
+        <div class="flower-grid">
+            <!-- Product 1 -->
+            <div class="flower-card">
+                <span class="flower-card__price">$49.99</span>
+                <img src="assets/rose-bouquet.jpg" alt="Rose Bouquet" class="flower-card__image">
+                <h3 class="flower-card__title">Classic Rose Bouquet</h3>
+                <p class="flower-card__description">A timeless arrangement of fresh red roses, perfect for expressing love.</p>
+                <button class="sw-button sw-button--primary">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="flower-card">
+                <span class="flower-card__price">$39.99</span>
+                <img src="assets/spring-mix.jpg" alt="Spring Mix" class="flower-card__image">
+                <h3 class="flower-card__title">Spring Melody Mix</h3>
+                <p class="flower-card__description">Colorful mix of seasonal spring flowers in a beautiful arrangement.</p>
+                <button class="sw-button sw-button--primary">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="flower-card">
+                <span class="flower-card__price">$59.99</span>
+                <img src="assets/luxury-bouquet.jpg" alt="Luxury Bouquet" class="flower-card__image">
+                <h3 class="flower-card__title">Luxury White Collection</h3>
+                <p class="flower-card__description">Premium white roses and lilies, perfect for special occasions.</p>
+                <button class="sw-button sw-button--primary">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="flower-features">
+        <div class="sw-container">
+            <div class="flower-grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck feature-card__icon"></i>
+                    <h3>Same Day Delivery</h3>
+                    <p>Order by 2 PM for same-day delivery in your area.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-leaf feature-card__icon"></i>
+                    <h3>Fresh Guarantee</h3>
+                    <p>7-day freshness guarantee on all our flowers.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gift feature-card__icon"></i>
+                    <h3>Perfect Gifting</h3>
+                    <p>Complimentary gift wrapping and message card.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="flower-newsletter">
+        <div class="sw-container" style="text-align: center;">
+            <h2>Join Our Flower Family</h2>
+            <p>Subscribe to receive special offers, flower care tips, and beautiful inspiration.</p>
+            <form class="flower-newsletter__form">
+                <input type="email" class="flower-newsletter__input" placeholder="Enter your email address">
+                <button type="submit" class="sw-button sw-button--primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--floral-sage); color: var(--floral-white); padding: var(--spacing-2xl) 0;">
+        <div class="sw-container">
+            <div class="flower-grid">
+                <div>
+                    <h3>About Us</h3>
+                    <p>Bringing joy through beautiful flowers since 2010. We're passionate about creating perfect floral arrangements for every occasion.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#" style="color: var(--floral-white); text-decoration: none;">Shop</a></li>
+                        <li><a href="#" style="color: var(--floral-white); text-decoration: none;">Occasions</a></li>
+                        <li><a href="#" style="color: var(--floral-white); text-decoration: none;">About</a></li>
+                        <li><a href="#" style="color: var(--floral-white); text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>123 Flower Street<br>Garden City, GC 12345<br>Phone: (555) 123-4567<br>Email: hello@bloomingdelights.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple category filter animation
+        document.querySelectorAll('.flower-category').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelector('.flower-category.active').classList.remove('active');
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
